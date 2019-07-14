@@ -1,5 +1,6 @@
+package LeetCode;
 
-public class L66PlusOne {
+public class L066PlusOne {
 	public int[] plusOne(int[] digits) {
 		int flag = 1;
 		int index = digits.length - 1;

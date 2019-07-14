@@ -1,5 +1,6 @@
+package LeetCode;
 
-public class L28ImplementstrStr {
+public class L028ImplementstrStr {
 	public int strStr(String haystack, String needle) {
 		if (needle.length() == 0)
 			return 0;

@@ -1,7 +1,8 @@
+package LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class L54SpiralMatrix {
+public class L054SpiralMatrix {
 	public List<Integer> spiralOrder(int[][] matrix) {
 		ArrayList<Integer> list = new ArrayList<>();
 		int row = matrix.length;

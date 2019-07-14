@@ -1,5 +1,6 @@
+package LeetCode;
 
-public class L67AddBinary {
+public class L067AddBinary {
 	public String addBinary(String a, String b) {
 		int alen = a.length();
 		int blen = b.length();
