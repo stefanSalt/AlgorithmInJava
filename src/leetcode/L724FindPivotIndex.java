@@ -1,4 +1,4 @@
-package LeetCode;
+package leetcode;
 /*
  * 求数组累加和，再用一个数字存放从头到当前位置数字和，判断是否符合要求
  */

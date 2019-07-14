@@ -1,4 +1,4 @@
-package LeetCode;
+package leetcode;
 //至少是其他数字两倍的最大数
 /*
  * 用两个数来存放当前最大值和次大值得索引，最后判定是否符合要求

@@ -1,4 +1,4 @@
-package LeetCode;
+package leetcode;
 
 public class L498DiagonalTraverse {
 	public static int[] findDiagonalOrder(int[][] matrix) {
