@@ -17,10 +17,12 @@
 向右旋转 1 步: [99,-1,-100,3]
 向右旋转 2 步: [3,99,-1,-100]
  */
+package leetcode;
+
 public class L189RotateArray {
 	/*
 	 * 数组元素右移k个单位之后，数组原本的后k%len个元素被移动到数组左端， 等价于数组后k%len个元素反转，再反转剩下的元素，再反转整个数组
-	 * 这个思路真的是太强了！
+	 * 
 	 */
 	public void rotate(int[] nums, int k) {
 		if (nums == null || nums.length == 0)
@@ -42,21 +44,10 @@ public class L189RotateArray {
 		}
 	}
 
-	public void rotate2(int[] nums, int k) {
-		k %= nums.length;
-		for (int i = 0; i < k; i++) {
-			int temp = nums[nums.length - i - 1];
-			for (int j = nums.length - 1; j >= k; j -= k) {
-				nums[j] = nums[j - k];
-			}
-			nums[i] = temp;
-		}
-	}
-
 	public static void main(String[] args) {
 		int nums[] = new int[] { 1, 2, 3, 4, 5, 6, 7 };
 		L189RotateArray l189RotateArray = new L189RotateArray();
-		l189RotateArray.rotate2(nums, 3);
+		l189RotateArray.rotate(nums, 3);
 		for (int i = 0; i < nums.length; i++) {
 			System.out.print(nums[i]);
 		}

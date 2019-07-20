@@ -65,7 +65,7 @@ public class L209MinimumSizeSubarraySum {
 		for (int i = 1; i < sums.length; i++) {
 			sums[i] += sums[i - 1] + nums[i];
 		}
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < nums.length; i++) {
 			int target = s + (i == 0 ? 0 : sums[i - 1]);
 			int j = findWindowEnd(i, sums, target);
 			if (j != nums.length) {
