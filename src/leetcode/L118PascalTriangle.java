@@ -1,4 +1,5 @@
 package leetcode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +8,6 @@ public class L118PascalTriangle {
 		List<List<Integer>> llist = new ArrayList<>();
 		if (numRows == 0)
 			return llist;
-		int[] q = { 1, 7, 9 };
 		int[][] arr = new int[numRows][];
 		for (int i = 0; i < numRows; i++) {
 			List<Integer> list = new ArrayList<>();
